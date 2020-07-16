@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "accountName": {
+      "value": "[concat('table-', uniqueString(resourceGroup().id))]"
+    },
+    "location": {
+      "value": "[resourceGroup().location]"
+    },
+    "primaryRegion": {
+      "value": null
+    },
+    "secondaryRegion": {
+      "value": null
+    },
+    "defaultConsistencyLevel": {
+      "value": "Session"
+    },
+    "maxStalenessPrefix": {
+      "value": 100000
+    },
+    "maxIntervalInSeconds": {
+      "value": 300
+    },
+    "automaticFailover": {
+      "value": true
+    },
+    "tableName": {
+      "value": null
+    },
+    "throughput": {
+      "value": 400
+    }
+  }
+}
