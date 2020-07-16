@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "accountName": {
-      "value": "[concat('table-', uniqueString(resourceGroup().id))]"
+      "value": "table-02022020"
     },
     "location": {
-      "value": "[resourceGroup().location]"
+      "value": "eastus"
     },
     "primaryRegion": {
-      "value": null
+      "value": "eastus"
     },
     "secondaryRegion": {
-      "value": null
+      "value": "eastus2"
     },
     "defaultConsistencyLevel": {
       "value": "Session"
@@ -27,7 +27,7 @@
       "value": true
     },
     "tableName": {
-      "value": null
+      "value": "tablename-2007162020"
     },
     "throughput": {
       "value": 400
